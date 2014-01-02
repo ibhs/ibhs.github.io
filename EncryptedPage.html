@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Encrypted Page</title>
+  </head>
+  <body>
+    <script language="JavaScript1.2">
+<!--
+
+
+function get_password() {
+  orig_pass = prompt("Please enter password","");
+  if (orig_pass!=null && orig_pass!="")
+  password = new Array(orig_pass.length);
+  for(i=0; i<orig_pass.length; i++) {
+    password[i] = orig_pass.charCodeAt(i);
+  }
+  return password;
+}
+
+password = get_password();
+orig = unescape("Luigisyuoo%20aissoucd%20mon%20%20silurad%20Ipswiwr%20e%20ood.IHTcr%20hetntpso%20wrpm%20iw%20lr%2Cesldc%20nl.icd%20realtyocdcb%20dd%20THMo%20.mclmma%20euohrmwrns%20e%20aueacititnl12rn%28eletdeMo%20esieT%20o%20mr.%2CmsFrqrfxea35tw%20EJ%2060S%20%20Eps8%20.dprtx%20.en1%20nrprr%20%20%2CxsGo0dl%20ilhooee%20.ta%20I%20lo.owrIc%20n%2C%20oheorb7%20os%2CLr/emes9Rosoi.Iee8hr%3Asa.vrsyrrcs%20ino%20%20sosr%20t%20il%20Fsewfyls2o%20r%20tine%20t%20%20te%20%2Ctp%20%20o%20e%2Ch%20i%20aeoO%20iualhs5v%20lOoceaike%20ylwgo%20rCtiam%20nhM%20eoaetf%20AlekwBg%20okWedC%20rneeetm%20vmmciNte%29%3AiwE%20aranta%20ecstd%20cthrl%2C%20e%20etdcwet%20%20%20ht%20%20a.luemso%20opno%20%20igc%20%20oo%20grntpsepwro.srtlsl%20a%20n%20tbttle%20n%20norligfscpdnnd.%20Llnoe%20%20saostoldx%20eeuuotoin%20eemttrme%20cedent.");
+orig = orig.split("");
+
+passnum = orig.length % password.length;
+for(i=orig.length-1; i>=0; i--) {
+
+  passnum--;
+  if (passnum == -1) passnum = password.length - 1;
+  
+  pos1 = i;
+  pos2 = i + password[passnum];
+
+  if (pos2 >= orig.length) continue;
+
+  char1 = orig[pos1];
+  char2 = orig[pos2];
+
+  orig[pos2] = char1;
+  orig[pos1] = char2;
+
+}
+
+orig1 = "";
+for(i=0;i<orig.length;i++) {
+  orig1 = orig1 + orig[i];
+}
+orig1 = orig1.replace(/mmm/g,"\r\n");
+
+document.write(orig1);
+
+//-->
+
+</script><noscript>JavaScript must be enabled in your browse in order to see protected page.</noscript>
+  </body>
+</html>
